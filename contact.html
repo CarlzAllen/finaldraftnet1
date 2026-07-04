@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | NetworkOne</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght=300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { 
+                        "brand-green": "#83BD52", 
+                        "brand-blue": "#1C84BE", 
+                        "surface-light": "#F8F9FA", 
+                        "text-main": "#2D3142" 
+                    },
+                    fontFamily: { 
+                        "sans": ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface-light font-sans text-text-main antialiased flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="w-full border-b border-gray-200 bg-white sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 h-20">
+            <a href="index.html" class="flex items-center">
+                <img src="NetworkOne_LOGO.png" alt="NetworkOne" class="h-10 w-auto object-contain">
+            </a>
+            <nav id="desktop-nav" class="hidden md:flex items-center gap-1 h-full font-bold text-sm">
+                <a href="index.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Home</a>
+                <a href="about.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">About Us</a>
+                <a href="services.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Services</a>
+                <a href="ict-forum.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">ICT Forum</a>
+                <a href="contact.html" class="text-brand-green border-b-2 border-brand-green h-full flex items-center px-4">Contact</a>
+                <a href="service-ticket.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Service Ticket</a>
+            </nav>
+            <div class="hidden sm:flex items-center gap-4">
+                <!-- Reverted back to Sales Inquiry -->
+                <a href="contact.html" class="px-5 py-2.5 bg-brand-green text-white font-bold text-sm rounded-lg shadow-sm hover:bg-opacity-90 transition-all">Sales Inquiry</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl font-black text-gray-800 tracking-tight mb-2">Connect With NetworkOne</h1>
+                <div class="w-12 h-1 bg-brand-green mx-auto rounded"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-12 gap-12 items-start">
+                
+                <!-- Sales Inquiry & Contact Engagement Panel -->
+                <div class="md:col-span-7 bg-white p-8 border border-gray-200 rounded-2xl shadow-sm space-y-6">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Sales Inquiry & General Contact</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Interested in transforming your corporate infrastructure or partnering on upcoming telecom designs? We want to hear from you. Reach out to our business development team today to discuss your organization's specific technical goals.
+                        </p>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            For project estimates, consultations, or general brand inquiries, please use our secure external intake structure below to submit your details directly to an account representative.
+                        </p>
+                    </div>
+
+                    <div class="pt-4 border-t border-gray-100">
+                        <!-- Contact Button linking to Google Form -->
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdnWLMVoPCQPl0VEi5mFZ0-zK0O1b4Aivw7DicmOFhj3bO-Ig/viewform?usp=header" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="inline-block text-center px-8 py-3.5 bg-brand-green text-white font-bold text-sm rounded-lg shadow-sm hover:bg-opacity-90 transition-all uppercase tracking-wider">
+                            Open Sales & Contact Form
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Existing Physical Infrastructure Panel -->
+                <div class="md:col-span-5 space-y-8">
+                    <div class="bg-gray-900 text-white p-8 rounded-2xl space-y-4 shadow-sm">
+                        <span class="text-xs font-bold text-brand-green uppercase tracking-wider">Physical Infrastructure</span>
+                        <h3 class="text-xl font-bold">Office Hub</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            Our localized headquarters monitors deployment metrics and framework provisions globally across core regional hubs.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6 bg-white p-8 border border-gray-200 rounded-2xl shadow-sm">
+                        <div>
+                            <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Location</h4>
+                            <p class="text-sm font-semibold text-gray-800">432 Bay Street, Nassau, Bahamas</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Phone</h4>
+                            <p class="text-sm font-semibold text-gray-800">242-328-3000</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Electronic Intake</h4>
+                            <p class="text-sm font-semibold text-brand-blue">info@networkonebahamas.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Master Footer Structure -->
+    <footer class="bg-gray-950 text-gray-400 text-sm border-t border-gray-900 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="space-y-4">
+                <img src="NetworkOne_LOGO.png" alt="NetworkOne" class="h-7 w-auto brightness-0 invert opacity-70">
+                <p class="text-xs text-gray-500">Providing high-performance structural systems engineering, reliable telecom design, and multi-tier technology framework auditing.</p>
+            </div>
+            <div class="space-y-3 text-xs">
+                <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-3 bg-brand-green rounded-full"></span>
+                    <h4 class="text-white font-bold uppercase tracking-widest text-[11px]">Navigation</h4>
+                    <span class="flex-grow h-px bg-gray-800 ml-1"></span>
+                </div>
+                <div class="space-y-2 pl-3.5">
+                    <a href="index.html" class="block hover:text-white transition-colors">Home</a>
+                    <a href="about.html" class="block hover:text-white transition-colors">About Us</a>
+                    <a href="services.html" class="block hover:text-white transition-colors">Services</a>
+                    <a href="ict-forum.html" class="block hover:text-white transition-colors">ICT Forum</a>
+                    <a href="contact.html" class="block hover:text-white transition-colors">Contact</a>
+                    <a href="service-ticket.html" class="block hover:text-white transition-colors">Service Ticket</a>
+                </div>
+            </div>
+            <div class="space-y-3 text-xs">
+                <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-3 bg-brand-green rounded-full"></span>
+                    <h4 class="text-white font-bold uppercase tracking-widest text-[11px]">Follow Us</h4>
+                    <span class="flex-grow h-px bg-gray-800 ml-1"></span>
+                </div>
+                <div class="space-y-2 pl-3.5">
+                    <a href="https://linkedin.com" target="_blank" class="block hover:text-white transition-colors">LinkedIn</a>
+                    <a href="https://www.youtube.com/@networkonetalks5441" target="_blank" class="block hover:text-white transition-colors">YouTube</a>
+                </div>
+            </div>
+            <div class="space-y-3 text-xs text-gray-500">
+                <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-3 bg-brand-green rounded-full"></span>
+                    <h4 class="text-white font-bold uppercase tracking-widest text-[11px]">Corporate Office</h4>
+                    <span class="flex-grow h-px bg-gray-800 ml-1"></span>
+                </div>
+                <div class="space-y-2.5 pl-3.5 leading-relaxed">
+                    <div class="flex items-center gap-2 text-gray-400">
+                        <svg class="w-4 h-4 text-brand-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        <span>432 Bay Street, Nassau, Bahamas</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-gray-400">
+                        <svg class="w-4 h-4 text-brand-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                        <span>242-328-3000</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-gray-400">
+                        <svg class="w-4 h-4 text-brand-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        <span>info@networkonebahamas.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 py-4 border-t border-gray-900 text-center text-xs text-gray-600">
+            &copy; 2014-2026 NetworkOne. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
