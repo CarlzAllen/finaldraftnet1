@@ -3,24 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service Ticket & Complaints | NetworkOne</title>
+    <title>Our Services | NetworkOne</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght=300;400;500;600;700;900&display=swap" rel="stylesheet">
     <script id="tailwind-config">
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: { 
-                        "brand-green": "#83BD52", 
-                        "brand-blue": "#1C84BE", 
-                        "surface-light": "#F8F9FA", 
-                        "text-main": "#2D3142" 
-                    },
-                    fontFamily: { 
-                        "sans": ["Inter", "sans-serif"],
-                        "headline": ["Inter", "sans-serif"], 
-                        "body": ["Inter", "sans-serif"] 
-                    }
+                    colors: { "brand-green": "#83BD52", "brand-blue": "#1C84BE", "surface-light": "#F8F9FA", "text-main": "#2D3142" }
                 }
             }
         }
@@ -36,13 +26,13 @@
             </a>
             
             <!-- Desktop Nav -->
-            <nav id="desktop-nav" class="hidden md:flex items-center gap-1 h-full font-bold text-sm">
+            <nav class="hidden md:flex items-center gap-1 h-full font-bold text-sm">
                 <a href="index.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Home</a>
                 <a href="about.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">About Us</a>
-                <a href="services.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Services</a>
+                <a href="services.html" class="text-brand-green border-b-2 border-brand-green h-full flex items-center px-4">Services</a>
                 <a href="ict-forum.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">ICT Forum</a>
                 <a href="contact.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Contact</a>
-                <a href="service-ticket.html" class="text-brand-green border-b-2 border-brand-green h-full flex items-center px-4">Service Ticket</a>
+                <a href="service-ticket.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Service Ticket</a>
             </nav>
             
             <div class="hidden sm:flex items-center gap-4">
@@ -63,33 +53,82 @@
             <nav class="flex flex-col font-bold text-sm py-3 px-6 space-y-3">
                 <a href="index.html" class="text-gray-500 hover:text-brand-green py-2 block">Home</a>
                 <a href="about.html" class="text-gray-500 hover:text-brand-green py-2 block">About Us</a>
-                <a href="services.html" class="text-gray-500 hover:text-brand-green py-2 block">Services</a>
+                <a href="services.html" class="text-brand-green py-2 block">Services</a>
                 <a href="ict-forum.html" class="text-gray-500 hover:text-brand-green py-2 block">ICT Forum</a>
                 <a href="contact.html" class="text-gray-500 hover:text-brand-green py-2 block">Contact</a>
-                <a href="service-ticket.html" class="text-brand-green py-2 block">Service Ticket</a>
+                <a href="service-ticket.html" class="text-gray-500 hover:text-brand-green py-2 block">Service Ticket</a>
                 <a href="contact.html" class="sm:hidden block w-full text-center px-5 py-2.5 bg-brand-green text-white font-bold text-sm rounded-lg shadow-sm hover:bg-opacity-90 transition-all mt-2">Sales Inquiry</a>
             </nav>
         </div>
     </header>
 
-    <!-- Main Content Area -->
-    <main class="flex-grow flex flex-col justify-center items-center py-20 px-6 bg-white">
-        <div class="max-w-2xl w-full text-center space-y-6">
-            <h1 class="text-4xl font-black text-gray-900 tracking-tight">Customer Support & Service Tickets</h1>
-            <p class="text-gray-500 text-base leading-relaxed">
-                Are you experiencing technical glitches, network infrastructure difficulties, or framework delivery discrepancies? Open an official corporate grievance or technical assistance request directly with our auditing panel.
-            </p>
-            <div class="w-12 h-1 bg-brand-green mx-auto rounded"></div>
-            
-            <div class="pt-6">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScK23_PS-fjXmwG1Eed4tzmU75DpOWpNVpruH5p6E-MFfwgsQ/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="inline-block px-8 py-4 bg-brand-blue text-white font-black text-base rounded-xl shadow-md hover:bg-opacity-90 active:scale-95 transition-all duration-150 w-full sm:w-auto">
-                    Open Service Ticket Form
-                </a>
+    <main class="flex-grow max-w-5xl mx-auto px-6 py-16">
+        <h1 class="text-4xl font-black text-gray-900 tracking-tight mb-12 text-center">Our Services</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Added interactive frame border on hover and toggle states -->
+            <div class="group bg-white p-6 border border-gray-200 hover:border-brand-blue focus-within:border-brand-blue rounded-xl shadow-sm flex flex-col justify-between min-h-[260px] transition-all duration-200">
+                <div class="space-y-3">
+                    <h3 class="text-xl font-bold text-gray-900">On-Premise PBX</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">For businesses that demand total control and data sovereignty, our On-Premise PBX solutions offer a physical, dedicated communication hub. We provide high-performance hardware that ensures your internal and external communications remain secure, reliable, and entirely within your walls.</p>
+                </div>
+                <div class="pt-4">
+                    <span class="text-xs font-semibold bg-blue-50 text-brand-blue px-3 py-1.5 rounded-md inline-block border border-blue-100">Best for: Large enterprises or high-security environments requiring dedicated local infrastructure.</span>
+                </div>
+            </div>
+
+            <div class="group bg-white p-6 border border-gray-200 hover:border-brand-green focus-within:border-brand-green rounded-xl shadow-sm flex flex-col justify-between min-h-[260px] transition-all duration-200">
+                <div class="space-y-3">
+                    <h3 class="text-xl font-bold text-gray-900">Hosted Cloud PBX</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Shift your communications to the cloud and experience ultimate flexibility. Our Hosted PBX allows your team to stay connected from anywhere in the world, on any device. With zero hardware to maintain and seamless software updates, you get a feature-rich phone system without the maintenance headache.</p>
+                </div>
+                <div class="pt-4">
+                    <span class="text-xs font-semibold bg-green-50 text-brand-green px-3 py-1.5 rounded-md inline-block border border-green-100">Benefits: Remote-ready, crystal-clear VoIP quality, and lower upfront capital expenditure.</span>
+                </div>
+            </div>
+
+            <div class="group bg-white p-6 border border-gray-200 hover:border-brand-blue focus-within:border-brand-blue rounded-xl shadow-sm flex flex-col justify-between min-h-[260px] transition-all duration-200">
+                <div class="space-y-3">
+                    <h3 class="text-xl font-bold text-gray-900">Robust Networks</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">A business is only as fast as its network. We specialize in engineering high-availability network architectures that eliminate downtime. From initial topology design to hands-on implementation and 24/7 proactive monitoring, we ensure your data flows without interruption.</p>
+                </div>
+                <div class="pt-4">
+                    <span class="text-xs font-semibold bg-blue-50 text-brand-blue px-3 py-1.5 rounded-md inline-block border border-blue-100">Features: Redundant failovers, high-speed switching, and enterprise-grade security protocols.</span>
+                </div>
+            </div>
+
+            <div class="group bg-white p-6 border border-gray-200 hover:border-brand-green focus-within:border-brand-green rounded-xl shadow-sm flex flex-col justify-between min-h-[260px] transition-all duration-200">
+                <div class="space-y-3">
+                    <h3 class="text-xl font-bold text-gray-900">Structured Cabling</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">The foundation of every great network is the physical layer. NetworkOne provides professional structured cabling services (Copper and Fiber) that adhere to the highest industry standards. We clean up the "spaghetti" in your server room and replace it with organized, labeled, and certified cabling systems.</p>
+                </div>
+                <div class="pt-4">
+                    <span class="text-xs font-semibold bg-green-50 text-brand-green px-3 py-1.5 rounded-md inline-block border border-green-100">Precision: Cat6, Cat6a, and Fiber Optic installations designed for future-proof bandwidth.</span>
+                </div>
+            </div>
+
+            <div class="group bg-white p-6 border border-gray-200 hover:border-brand-blue focus-within:border-brand-blue rounded-xl shadow-sm flex flex-col justify-between min-h-[260px] transition-all duration-200">
+                <div class="space-y-3">
+                    <h3 class="text-xl font-bold text-gray-900">Telecom/Technology Audits</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Are you overpaying for services you don’t use? Our audit team dives deep into your current vendor contracts, hardware efficiency, and service bills. We identify redundancies and hidden costs, often saving our clients significant percentages on their monthly overhead.</p>
+                </div>
+                <div class="pt-4">
+                    <span class="text-xs font-semibold bg-blue-50 text-brand-blue px-3 py-1.5 rounded-md inline-block border border-blue-100">The Result: A leaner, more efficient technology stack with a transparent ROI.</span>
+                </div>
+            </div>
+
+            <div class="group bg-white p-6 border border-gray-200 hover:border-brand-green focus-within:border-brand-green rounded-xl shadow-sm flex flex-col justify-between min-h-[260px] transition-all duration-200">
+                <div class="space-y-3">
+                    <h3 class="text-xl font-bold text-gray-900">IT Consulting</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Technology should be a catalyst, not a hurdle. Our consulting services bridge the gap between your business goals and your IT capabilities. We provide strategic roadmaps for digital transformation, cybersecurity posture assessments, and long-term hardware lifecycle planning.</p>
+                </div>
+                <div class="pt-4">
+                    <span class="text-xs font-semibold bg-green-50 text-brand-green px-3 py-1.5 rounded-md inline-block border border-green-100">Partnership: We act as your virtual CTO, ensuring your tech investments align with your bottom line.</span>
+                </div>
             </div>
         </div>
     </main>
 
-    <!-- Unified Master Footer Structure -->
+    <!-- Synced Footer -->
     <footer class="bg-gray-950 text-gray-400 text-sm border-t border-gray-900 mt-auto">
         <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
             <div class="space-y-4">
