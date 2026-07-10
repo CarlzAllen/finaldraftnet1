@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html class="light" lang="en">
+<html class="light h-full" lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <title>NetworkOne | Maximizing Your Technology Investment</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght=300;400;500;600;700;900&display=swap" rel="stylesheet">
@@ -23,73 +23,73 @@
         }
     </script>
 </head>
-<body class="bg-surface-light font-sans text-text-main antialiased flex flex-col min-h-screen">
+<body class="bg-surface-light font-sans text-text-main antialiased flex flex-col min-h-screen w-full overflow-x-hidden">
 
     <!-- Header -->
     <header class="w-full border-b border-gray-200 bg-white sticky top-0 z-50 shadow-sm">
-        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 h-20">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 h-20">
             <a href="index.html" class="flex items-center">
-                <img src="NetworkOne_LOGO.png" alt="NetworkOne" class="h-10 w-auto object-contain">
+                <img src="NetworkOne_LOGO.png" alt="NetworkOne" class="h-8 sm:h-10 w-auto object-contain">
             </a>
             
-            <!-- Desktop Nav -->
-            <nav id="desktop-nav" class="hidden md:flex items-center gap-1 h-full font-bold text-sm">
-                <a href="index.html" class="text-brand-green border-b-2 border-brand-green h-full flex items-center px-4">Home</a>
-                <a href="about.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">About Us</a>
-                <a href="services.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Services</a>
-                <a href="ict-forum.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">ICT Forum</a>
-                <a href="contact.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Contact</a>
-                <a href="service-ticket.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-4">Service Ticket</a>
+            <!-- Desktop Nav: Formally aligned to standard sequence flow -->
+            <nav id="desktop-nav" class="hidden lg:flex items-center gap-1 h-full font-bold text-sm">
+                <a href="index.html" class="text-brand-green border-b-2 border-brand-green h-full flex items-center px-3">Home</a>
+                <a href="services.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-3">Services</a>
+                <a href="ict-forum.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-3">ICT Forum</a>
+                <a href="about.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-3">About Us</a>
+                <a href="contact.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-3">Contact</a>
+                <a href="service-ticket.html" class="text-gray-500 border-b-2 border-transparent hover:text-brand-green h-full flex items-center px-3">Service Ticket</a>
             </nav>
-            
-            <div class="hidden sm:flex items-center gap-4">
+
+            <!-- Top Right Action prioritized for Sales Intake -->
+            <div class="hidden lg:flex items-center gap-4">
                 <a href="contact.html" class="px-5 py-2.5 bg-brand-green text-white font-bold text-sm rounded-lg shadow-sm hover:bg-opacity-90 transition-all">Sales Inquiry</a>
             </div>
 
             <!-- Mobile Menu Button -->
-            <button id="mobile-menu-toggle" class="block md:hidden text-gray-600 focus:outline-none focus:text-brand-green p-2" aria-label="Toggle Navigation">
+            <button id="mobile-menu-btn" class="lg:hidden p-2 text-gray-600 hover:text-brand-green focus:outline-none" aria-label="Toggle Menu">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path id="menu-icon-open" class="block" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    <path id="menu-icon-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                 </svg>
             </button>
         </div>
 
-        <!-- Mobile Drawer Menu -->
-        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 bg-white shadow-inner">
-            <nav class="flex flex-col font-bold text-sm py-3 px-6 space-y-3">
-                <a href="index.html" class="text-brand-green py-2 block">Home</a>
-                <a href="about.html" class="text-gray-500 hover:text-brand-green py-2 block">About Us</a>
-                <a href="services.html" class="text-gray-500 hover:text-brand-green py-2 block">Services</a>
-                <a href="ict-forum.html" class="text-gray-500 hover:text-brand-green py-2 block">ICT Forum</a>
-                <a href="contact.html" class="text-gray-500 hover:text-brand-green py-2 block">Contact</a>
-                <a href="service-ticket.html" class="text-gray-500 hover:text-brand-green py-2 block">Service Ticket</a>
-                <a href="contact.html" class="sm:hidden block w-full text-center px-5 py-2.5 bg-brand-green text-white font-bold text-sm rounded-lg shadow-sm hover:bg-opacity-90 transition-all mt-2">Sales Inquiry</a>
-            </nav>
+        <!-- Mobile Drawer -->
+        <div id="mobile-drawer" class="hidden lg:hidden border-t border-gray-100 bg-white px-4 py-4 space-y-3 shadow-inner">
+            <a href="index.html" class="block py-2 text-sm font-bold text-brand-green">Home</a>
+            <a href="services.html" class="block py-2 text-sm font-bold text-gray-600 hover:text-brand-green">Services</a>
+            <a href="ict-forum.html" class="block py-2 text-sm font-bold text-gray-600 hover:text-brand-green">ICT Forum</a>
+            <a href="about.html" class="block py-2 text-sm font-bold text-gray-600 hover:text-brand-green">About Us</a>
+            <a href="contact.html" class="block py-2 text-sm font-bold text-gray-600 hover:text-brand-green">Contact</a>
+            <a href="service-ticket.html" class="block py-2 text-sm font-bold text-gray-600 hover:text-brand-green">Service Ticket</a>
+            <div class="pt-2 border-t border-gray-100">
+                <a href="contact.html" class="block w-full text-center py-2.5 bg-brand-green text-white font-bold text-sm rounded-lg">Sales Inquiry</a>
+            </div>
         </div>
     </header>
 
-    <main class="flex-grow">
+    <main class="flex-grow w-full">
         <!-- Hero Section -->
-        <div class="py-24 bg-surface-light border-b border-gray-200">
-            <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
-                <div class="lg:col-span-7 space-y-6">
+        <div class="py-12 md:py-20 lg:py-24 bg-surface-light border-b border-gray-200 w-full overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left flex flex-col items-center lg:items-start">
                     <div class="inline-flex items-center gap-3 bg-white border border-gray-200 rounded-full py-1.5 px-4 pr-6 shadow-sm max-w-full">
-                        <img src="12%20Years.png" alt="12 Years" class="h-9 w-auto rounded-full flex-shrink-0">
-                        <span class="text-xs font-bold tracking-wide text-gray-600 uppercase truncate">Managing Information & Communications Technology Since 2014</span>
+                        <img src="12%20Years.png" alt="12 Years" class="h-8 w-auto rounded-full flex-shrink-0">
+                        <span class="text-[10px] sm:text-xs font-bold tracking-wide text-gray-600 uppercase truncate">Managing ICT Since 2014</span>
                     </div>
-                    <h1 class="text-4xl md:text-6xl font-black tracking-tight leading-[1.1] text-gray-900">Maximize Your Information and Communications Technology <br class="hidden md:block"><span class="text-brand-blue">Investment</span></h1>
-                    <p class="text-lg text-gray-600 leading-relaxed max-w-2xl">NetworkOne bridges the gap between world-class technological innovation and trusted local expertise. We build resilient corporate voice platforms and dependable data networks engineered exclusively to match your bottom-line milestones.</p>
-                    <div class="flex flex-wrap gap-4 pt-2">
-                        <a href="services.html" class="px-6 py-3.5 bg-brand-green text-white font-bold rounded-lg shadow-md hover:bg-opacity-90 transition-all w-full sm:w-auto text-center">Explore Our Services</a>
-                        <a href="#ecosystem" class="px-6 py-3.5 bg-white border border-gray-300 text-gray-700 font-bold rounded-lg shadow-sm hover:bg-gray-50 transition-all w-full sm:w-auto text-center">Our Ecosystem</a>
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1] text-gray-900">Maximize Your Information and Communications Technology <br class="hidden sm:inline"><span class="text-brand-blue">Investment</span></h1>
+                    <p class="text-sm md:text-base lg:text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">NetworkOne bridges the gap between world-class technological innovation and trusted local expertise. We build resilient corporate voice platforms and dependable data networks engineered exclusively to match your bottom-line milestones.</p>
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-2 w-full sm:w-auto">
+                        <a href="services.html" class="w-full sm:w-auto text-center px-6 py-3.5 bg-brand-green text-white font-bold rounded-lg shadow-md hover:bg-opacity-90 transition-all">Explore Our Services</a>
+                        <a href="#ecosystem" class="w-full sm:w-auto text-center px-6 py-3.5 bg-white border border-gray-300 text-gray-700 font-bold rounded-lg shadow-sm hover:bg-gray-50 transition-all">Our Ecosystem</a>
                     </div>
                 </div>
-                <div class="lg:col-span-5 relative flex justify-center">
-                    <div class="relative w-full max-w-md aspect-square bg-transparent flex items-center justify-center p-4 text-center">
-                        <div class="space-y-6">
-                            <img src="12%20Years.png" alt="Celebrating 12 Years" class="w-72 h-auto mx-auto rounded-full drop-shadow-md max-w-full">
-                            <p class="text-xs font-bold text-gray-500 uppercase tracking-widest max-w-xs mx-auto">Celebrating Over A Decade of Reliable ICT Service Deployment</p>
+                <div class="lg:col-span-5 relative flex justify-center w-full">
+                    <div class="relative w-full max-w-xs sm:max-w-sm lg:max-w-md aspect-square bg-transparent flex items-center justify-center p-4 text-center">
+                        <div class="space-y-4 md:space-y-6">
+                            <img src="12%20Years.png" alt="Celebrating 12 Years" class="w-40 sm:w-56 md:w-64 lg:w-72 h-auto mx-auto rounded-full drop-shadow-md">
+                            <p class="text-[10px] sm:text-xs font-bold text-gray-500 uppercase tracking-widest max-w-xs mx-auto">Celebrating Over A Decade of Reliable ICT Service Deployment</p>
                         </div>
                     </div>
                 </div>
@@ -97,49 +97,50 @@
         </div>
 
         <!-- Customers Section -->
-        <section class="py-20 bg-surface-light border-b border-gray-200">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-2xl font-black text-gray-900 tracking-tight">Some Of Our Customers</h2>
+        <section class="py-12 md:py-16 bg-surface-light border-b border-gray-200 w-full overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                <div class="text-center mb-8 md:mb-12">
+                    <h2 class="text-xl md:text-2xl font-black text-gray-900 tracking-tight">Some Of Our Customers</h2>
                 </div>
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 justify-items-center">
-                    <div class="w-full h-32 bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow max-w-[224px]"><img src="baf%20logo.jpeg" alt="BAF" class="max-w-full max-h-full object-contain"></div>
-                    <div class="w-full h-32 bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow max-w-[224px]"><img src="btl%20logo.png" alt="BTL" class="max-w-full max-h-full object-contain"></div>
-                    <div class="w-full h-32 bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow max-w-[224px]"><img src="GOTB.png" alt="GOTB" class="max-w-full max-h-full object-contain"></div>
-                    <div class="w-full h-32 bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow max-w-[224px]"><img src="NAS%20logo.png" alt="NSA" class="max-w-full max-h-full object-contain"></div>
-                    <div class="w-full h-32 bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow max-w-[224px]"><img src="AA%20Logo.png" alt="AA" class="max-w-full max-h-full object-contain"></div>
-                    <div class="w-full h-32 bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow max-w-[224px]"><img src="Shell%20logo.png" alt="Shell" class="max-w-full max-h-full object-contain"></div>
-                    <div class="w-full h-32 bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow max-w-[224px]"><img src="NPEP%20LOgo.png" alt="NPEP" class="max-w-full max-h-full object-contain"></div>
-                    <div class="w-full h-32 bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow max-w-[224px]"><img src="holdun%20logo.jpeg" alt="Holdun" class="max-w-full max-h-full object-contain"></div>
-                    <div class="w-full h-32 bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow max-w-[224px]"><img src="clairmount%20logo.png" alt="Clairmount" class="max-w-full max-h-full object-contain"></div>
-                    <div class="w-full h-32 bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow max-w-[224px]"><img src="CCS%20Logo.png" alt="CCS" class="max-w-full max-h-full object-contain"></div>
+                <!-- Dynamic responsive grid for mobile (2 columns), ipad (3-4 columns), desktop (5 columns) -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8 justify-items-center">
+                    <div class="w-full max-w-[220px] h-24 sm:h-28 md:h-32 bg-white border border-gray-200 rounded-xl p-4 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow"><img src="baf%20logo.jpeg" alt="BAF" class="max-w-full max-h-full object-contain"></div>
+                    <div class="w-full max-w-[220px] h-24 sm:h-28 md:h-32 bg-white border border-gray-200 rounded-xl p-4 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow"><img src="btl%20logo.png" alt="BTL" class="max-w-full max-h-full object-contain"></div>
+                    <div class="w-full max-w-[220px] h-24 sm:h-28 md:h-32 bg-white border border-gray-200 rounded-xl p-4 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow"><img src="GOTB.png" alt="GOTB" class="max-w-full max-h-full object-contain"></div>
+                    <div class="w-full max-w-[220px] h-24 sm:h-28 md:h-32 bg-white border border-gray-200 rounded-xl p-4 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow"><img src="NAS%20logo.png" alt="NSA" class="max-w-full max-h-full object-contain"></div>
+                    <div class="w-full max-w-[220px] h-24 sm:h-28 md:h-32 bg-white border border-gray-200 rounded-xl p-4 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow"><img src="AA%20Logo.png" alt="AA" class="max-w-full max-h-full object-contain"></div>
+                    <div class="w-full max-w-[220px] h-24 sm:h-28 md:h-32 bg-white border border-gray-200 rounded-xl p-4 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow"><img src="Shell%20logo.png" alt="Shell" class="max-w-full max-h-full object-contain"></div>
+                    <div class="w-full max-w-[220px] h-24 sm:h-28 md:h-32 bg-white border border-gray-200 rounded-xl p-4 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow"><img src="NPEP%20LOgo.png" alt="NPEP" class="max-w-full max-h-full object-contain"></div>
+                    <div class="w-full max-w-[220px] h-24 sm:h-28 md:h-32 bg-white border border-gray-200 rounded-xl p-4 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow"><img src="holdun%20logo.jpeg" alt="Holdun" class="max-w-full max-h-full object-contain"></div>
+                    <div class="w-full max-w-[220px] h-24 sm:h-28 md:h-32 bg-white border border-gray-200 rounded-xl p-4 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow"><img src="clairmount%20logo.png" alt="Clairmount" class="max-w-full max-h-full object-contain"></div>
+                    <div class="w-full max-w-[220px] h-24 sm:h-28 md:h-32 bg-white border border-gray-200 rounded-xl p-4 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow"><img src="CCS%20Logo.png" alt="CCS" class="max-w-full max-h-full object-contain"></div>
                 </div>
             </div>
         </section>
 
-        <!-- Partners Section -->
-        <section id="ecosystem" class="py-20 bg-surface-light border-b border-gray-200">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-2xl font-black text-gray-900 tracking-tight">Our Technology Partners</h2>
+        <!-- Technology Partners Section -->
+        <section id="ecosystem" class="py-12 md:py-16 bg-surface-light border-b border-gray-200 w-full overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                <div class="text-center mb-8 md:mb-12">
+                    <h2 class="text-xl md:text-2xl font-black text-gray-900 tracking-tight">Our Technology Partners</h2>
                 </div>
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6 justify-items-center">
-                    <div class="w-full h-32 bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow max-w-[224px]"><img src="IMG_8362.png" alt="Cisco" class="max-w-full max-h-full object-contain"></div>
-                    <div class="w-full h-32 bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow max-w-[224px]"><img src="Juniper_5.png" alt="Juniper" class="max-w-full max-h-full object-contain"></div>
-                    <div class="w-full h-32 bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow max-w-[224px]"><img src="Nec_5.png" alt="NEC" class="max-w-full max-h-full object-contain"></div>
-                    <div class="w-full h-32 bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow max-w-[224px]"><img src="Yealink_5.png" alt="Yealink" class="max-w-full max-h-full object-contain"></div>
-                    <div class="w-full h-32 bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow max-w-[224px]"><img src="20408BD1-B400-4DA8-81E3-79339274D436.png" alt="Mitel" class="max-w-full max-h-full object-contain"></div>
-                    <div class="w-full h-32 bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow max-w-[224px]"><img src="IMG_8364.jpeg" alt="Grandstream" class="max-w-full max-h-full object-contain"></div>
-                    <div class="w-full h-32 bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow max-w-[224px]"><img src="IMG_8365.jpeg" alt="Yeastar" class="max-w-full max-h-full object-contain"></div>
-                    <div class="w-full h-32 bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow max-w-[224px]"><img src="IMG_8363.png" alt="Zycoo" class="max-w-full max-h-full object-contain"></div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 justify-items-center">
+                    <div class="w-full max-w-[220px] h-24 sm:h-28 md:h-32 bg-white border border-gray-200 rounded-xl p-4 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow"><img src="IMG_8362.png" alt="Cisco" class="max-w-full max-h-full object-contain"></div>
+                    <div class="w-full max-w-[220px] h-24 sm:h-28 md:h-32 bg-white border border-gray-200 rounded-xl p-4 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow"><img src="Juniper_5.png" alt="Juniper" class="max-w-full max-h-full object-contain"></div>
+                    <div class="w-full max-w-[220px] h-24 sm:h-28 md:h-32 bg-white border border-gray-200 rounded-xl p-4 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow"><img src="Nec_5.png" alt="NEC" class="max-w-full max-h-full object-contain"></div>
+                    <div class="w-full max-w-[220px] h-24 sm:h-28 md:h-32 bg-white border border-gray-200 rounded-xl p-4 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow"><img src="Yealink_5.png" alt="Yealink" class="max-w-full max-h-full object-contain"></div>
+                    <div class="w-full max-w-[220px] h-24 sm:h-28 md:h-32 bg-white border border-gray-200 rounded-xl p-4 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow"><img src="20408BD1-B400-4DA8-81E3-79339274D436.png" alt="Mitel" class="max-w-full max-h-full object-contain"></div>
+                    <div class="w-full max-w-[220px] h-24 sm:h-28 md:h-32 bg-white border border-gray-200 rounded-xl p-4 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow"><img src="IMG_8364.jpeg" alt="Grandstream" class="max-w-full max-h-full object-contain"></div>
+                    <div class="w-full max-w-[220px] h-24 sm:h-28 md:h-32 bg-white border border-gray-200 rounded-xl p-4 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow"><img src="IMG_8365.jpeg" alt="Yeastar" class="max-w-full max-h-full object-contain"></div>
+                    <div class="w-full max-w-[220px] h-24 sm:h-28 md:h-32 bg-white border border-gray-200 rounded-xl p-4 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow"><img src="IMG_8363.png" alt="Zycoo" class="max-w-full max-h-full object-contain"></div>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Master Footer Structure -->
-    <footer class="bg-gray-950 text-gray-400 text-sm border-t border-gray-900 mt-auto">
-        <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer class="bg-gray-950 text-gray-400 text-sm border-t border-gray-900 mt-auto w-full">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             <div class="space-y-4">
                 <img src="NetworkOne_LOGO.png" alt="NetworkOne" class="h-7 w-auto brightness-0 invert opacity-70">
                 <p class="text-xs text-gray-500">Providing high-performance structural systems engineering, reliable telecom design, and multi-tier technology framework auditing.</p>
@@ -150,13 +151,13 @@
                     <h4 class="text-white font-bold uppercase tracking-widest text-[11px]">Navigation</h4>
                     <span class="flex-grow h-px bg-gray-800 ml-1"></span>
                 </div>
-                <div class="space-y-2 pl-3.5">
-                    <a href="index.html" class="block hover:text-white transition-colors">Home</a>
-                    <a href="about.html" class="block hover:text-white transition-colors">About Us</a>
-                    <a href="services.html" class="block hover:text-white transition-colors">Services</a>
-                    <a href="ict-forum.html" class="block hover:text-white transition-colors">ICT Forum</a>
-                    <a href="contact.html" class="block hover:text-white transition-colors">Contact</a>
-                    <a href="service-ticket.html" class="block hover:text-white transition-colors">Service Ticket</a>
+                <div class="grid grid-cols-2 sm:block gap-2 pl-3.5">
+                    <a href="index.html" class="block hover:text-white transition-colors py-0.5">Home</a>
+                    <a href="services.html" class="block hover:text-white transition-colors py-0.5">Services</a>
+                    <a href="ict-forum.html" class="block hover:text-white transition-colors py-0.5">ICT Forum</a>
+                    <a href="about.html" class="block hover:text-white transition-colors py-0.5">About Us</a>
+                    <a href="contact.html" class="block hover:text-white transition-colors py-0.5">Contact</a>
+                    <a href="service-ticket.html" class="block hover:text-white transition-colors py-0.5">Service Ticket</a>
                 </div>
             </div>
             <div class="space-y-3 text-xs">
@@ -177,8 +178,8 @@
                     <span class="flex-grow h-px bg-gray-800 ml-1"></span>
                 </div>
                 <div class="space-y-2.5 pl-3.5 leading-relaxed">
-                    <div class="flex items-center gap-2 text-gray-400">
-                        <svg class="w-4 h-4 text-brand-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                    <div class="flex items-start gap-2 text-gray-400">
+                        <svg class="w-4 h-4 text-brand-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                         <span>432 Bay Street, Nassau, Bahamas</span>
                     </div>
                     <div class="flex items-center gap-2 text-gray-400">
@@ -197,23 +198,16 @@
         </div>
     </footer>
 
-    <!-- Mobile Menu Interactivity Script -->
     <script>
-        const menuToggle = document.getElementById('mobile-menu-toggle');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const openIcon = document.getElementById('menu-icon-open');
-        const closeIcon = document.getElementById('menu-icon-close');
-
-        menuToggle.addEventListener('click', () => {
-            const isHidden = mobileMenu.classList.contains('hidden');
-            if (isHidden) {
-                mobileMenu.classList.remove('hidden');
-                openIcon.classList.replace('block', 'hidden');
-                closeIcon.classList.replace('hidden', 'block');
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            var drawer = document.getElementById('mobile-drawer');
+            var icon = document.getElementById('menu-icon');
+            if (drawer.classList.contains('hidden')) {
+                drawer.classList.remove('hidden');
+                icon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
             } else {
-                mobileMenu.classList.add('hidden');
-                openIcon.classList.replace('hidden', 'block');
-                closeIcon.classList.replace('block', 'hidden');
+                drawer.classList.add('hidden');
+                icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
             }
         });
     </script>
